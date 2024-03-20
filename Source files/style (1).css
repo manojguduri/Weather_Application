@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #87CEEB;
+    position: relative; 
+    background-image: radial-gradient(circle at 20% 20%, #fff0 0%, #87CEEB 60%),
+                      radial-gradient(circle at 80% 20%, #fff0 0%, #fff 60%),
+                      radial-gradient(circle at 50% 50%, #ffe57f 0%, #ffbf00 80%);
+}
+
+.sun {
+    width: 150px;
+    height: 150px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.sunray {
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 120px solid #FFD700;
+    transform: rotate(30deg);
+}
+
+
+.cloud {
+    width: 200px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cloud::before,
+.cloud::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+}
+
+.cloud::before {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: -30px;
+    left: 50px;
+}
+
+.cloud::after {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: -40px;
+    right: 50px;
+}
+
+.cloud1 {
+    bottom: 20px;
+    right: 20px;
+}
+
+.cloud2 {
+    bottom: 60px;
+    right: 100px;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 20px; 
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info {
+    margin: 0 auto; 
+    max-width: 400px; 
+}
+button {
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    border: none; 
+    background-color: #4CAF50; 
+    color: white; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-bottom: 10px; 
+}
+
+input[type="text"]:focus {
+    outline: none; 
+    border-color: #4CAF50;
+}
