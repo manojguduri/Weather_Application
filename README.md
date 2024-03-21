@@ -19,4 +19,17 @@ This is a simple weather application that allows users to enter a city name and 
 ## Installation
 
 1. Clone the repository to your local machine:
+```
+git clone https://github.com/manojguduri/Weather_Application.git
+```
 
+3. Open the project directory.
+
+4. Open the `index.html` file in a web browser to run the application.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- OpenWeatherMap API
